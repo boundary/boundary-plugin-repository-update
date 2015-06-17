@@ -1,7 +1,12 @@
 {
+  "name" : "repository-update",
+  "version": "2.0",
+  "tags": "repository,update",
   "description" : "The Boundary Repository Update Core Plugin is a dummy plugin for testing changing the repository source for a sub-module in the graphdat/contrib repository",
   "command" : "node index.js",
+  "command_lua": "boundary-meter init.lua",
   "postExtract" : "npm install",
+  "postExtract_lua" : "",
   "ignore" : "node_modules",
   "metrics" : ["BOUNDARY_REPOSITORY_UPDATE"],
   "dashboards" : [
