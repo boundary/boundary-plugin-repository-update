@@ -1,5 +1,5 @@
 {
-  "name": "plugin-cpu_core",
+  "name": "respository-update",
   "version": "0.0.1",
   "description": "The Boundary Repository Update Core Plugin is a dummy plugin for testing changing the repository source for a sub-module in the graphdat/contrib repository",
   "main": "index.js",
