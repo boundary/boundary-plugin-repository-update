@@ -1,0 +1,29 @@
+{
+  "description" : "The Boundary Repository Update Core Plugin is a dummy plugin for testing changing the repository source for a sub-module in the graphdat/contrib repository",
+  "command" : "node index.js",
+  "postExtract" : "npm install",
+  "ignore" : "node_modules",
+  "metrics" : ["BOUNDARY_REPOSITORY_UPDATE"],
+  "dashboards" : [
+    {
+      "name" : "Boundary Repository Update",
+      "layout": "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-BOUNDARY_REPOSITORY_UPDATE=0-0-1-1"
+    }
+  ],
+  "paramSchema": [
+    {
+      "title": "Poll Interval",
+      "name": "pollInterval",
+      "description": "How often (in milliseconds) to poll the system for metrics (default: 1000)",
+      "type" : "integer",
+      "default" : 1000,
+      "required" : false
+    },
+    {
+      "title": "Source",
+      "name": "source",
+      "description": "The Source to display in the legend.  It will default to the hostname of the server",
+      "type": "string"
+    }
+  ]
+}

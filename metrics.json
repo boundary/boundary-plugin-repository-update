@@ -1,0 +1,11 @@
+{
+  "BOUNDARY_REPOSITORY_UPDATE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Boundary Repository Update metric",
+    "displayName": "Boundary Repository Update",
+    "displayNameShort": "Repository Update",
+    "isDisabled": 0,
+    "unit": "percent"
+  }
+}
