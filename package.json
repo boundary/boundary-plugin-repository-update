@@ -1,0 +1,25 @@
+{
+  "name": "plugin-cpu_core",
+  "version": "0.0.1",
+  "description": "The Boundary Repository Update Core Plugin is a dummy plugin for testing changing the repository source for a sub-module in the graphdat/contrib repository",
+  "main": "index.js",
+  "dependencies": {
+    "graphdat-plugin-tools": "0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boundary/bounday-plugin-repository-update"
+  },
+  "keywords": [
+    "graphdat",
+    "plugin",
+    "repository",
+    "update"
+  ],
+  "author": "Graphdat <support@graphdat.com>",
+  "license": "Apache v2",
+  "bugs": {
+    "url": "https://github.com/boundary/boundary-plugin-repository-update/issues"
+  },
+  "engine": "node >= 0.8.1"
+}
