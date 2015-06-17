@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/boundary/bounday-plugin-repository-update"
+    "url": "https://github.com/boundary/boundary-plugin-repository-update"
   },
   "keywords": [
     "graphdat",
@@ -16,7 +16,7 @@
     "repository",
     "update"
   ],
-  "author": "Graphdat <support@graphdat.com>",
+  "author": "Boundary <help@boundary.com>",
   "license": "Apache v2",
   "bugs": {
     "url": "https://github.com/boundary/boundary-plugin-repository-update/issues"
