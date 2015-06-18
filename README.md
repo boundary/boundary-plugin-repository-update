@@ -4,6 +4,8 @@ The Boundary Repository Update Core Plugin is a dummy plugin for testing changin
 
 ## Prerequisites
 
+None
+
 ### Supported OS
 
 |     OS    | Linux | Windows | SmartOS | OS X |
