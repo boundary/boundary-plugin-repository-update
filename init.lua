@@ -14,16 +14,20 @@
 -- limitations under the License.
 
 -- Add require statements for built-in libaries we wish to use
+local fs = require('fs')
+local json = require('json')
 local math = require('math')
 local os = require('os')
 local string = require('string')
 local timer = require('timer')
 
+local params = json.parse(fs.readFileSync('param.json'))
+
 -- Source of our metric
-local SOURCE = 'HelloWorld'
+local SOURCE = params.source or os.hostname()
 
 -- How often to output a measurement
-local POLL_INTERVAL = 5
+local POLL_INTERVAL = params.pollInterval
 
 -- Define our function that "samples" our measurement value
 function poll()
@@ -39,7 +43,6 @@ function poll()
 
 end
 
--- Set the timer interval and call back function poll(). Multiple input configuration
--- pollIterval by 1000 since setIterval expects milliseconds
-timer.setInterval(POLL_INTERVAL * 1000, poll)
+-- Set the timer interval in milli-seconds and call back function poll(). Multiple input configuration
+timer.setInterval(POLL_INTERVAL, poll)
 
